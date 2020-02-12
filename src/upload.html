@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		
+		<link rel="stylesheet" type="text/css" href="../css/nav.css">
+		<link rel="stylesheet" type="text/css" href="../css/upload.css">
+		<title>文件上传</title>
+	</head>
+	<body>
+		@@include('part/nav.html')
+			<div class="form">
+				<p class="title"><b>添加文件（一次只能上传一个文件）</b></p>
+				<p v-if="show">{{fileName}} {{uploadProgress}}</p>
+				<p v-if="show">哈希值： {{hash}} 已完成：{{hashProgress}}%</p>
+				<div>
+					<div id="upBtn">
+						选择文件
+						<input type="file" id="file" v-on:change="getFile($event)">
+					</div>
+				</div>
+				<button v-on:click="submit()">立即上传</button>
+			</div>
+			
+
+		<script type="text/javascript" src="../js/vue.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.js"></script>
+		<script type="moudle" src="../js/import.js"></script>
+		<script type="text/javascript" src="../js/upload.js"></script>
+	</body>
+	
+</html>

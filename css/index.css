@@ -1,0 +1,35 @@
+#content{ 
+	font-size: 30px;
+	color: rgb(36,41,46);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: auto;
+	flex-grow: 1;
+}
+
+#content p{
+	width:800px;
+	text-align: center;
+}
+
+.tip{
+	font-size: 18px;
+}
+
+.btn{
+	border: 1px solid rgb(121,184,255);
+	background-color: white;
+	border-radius: 5px;
+	color: rgb(3,102,214);
+	font-size: 20px;
+	width: 200px;
+	height: 50px;
+	outline:none;
+}
+
+.btn:hover{
+	border: 1px solid rgb(3,102,214);
+	cursor:pointer;
+}

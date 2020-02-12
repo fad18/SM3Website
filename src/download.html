@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="../css/nav.css">
+		<link rel="stylesheet" type="text/css" href="../css/download.css">
+		<title>文件下载</title>
+	</head>
+	<body>
+		@@include('part/nav.html')
+		
+		<div id="list">
+			<table>
+				<tr class="trStyle thStyle radius">
+					<th class="th1">文件名称</th>
+					<th class="td2">哈希值</th>
+					<th class="td3">文件上传时间</th>
+				</tr>
+				<tr class="trStyle tdStyle" v-for="(item,index) in list">
+					<td class="file text" v-on:click="down(index)">{{item.fileName}}</a></td>
+					<td class="text td2">{{item.hashValue}}</td>
+					<td class="text td3">{{item.modifiedTime}}</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.js"></script>
+	<script type="text/javascript" src="../js/download.js"></script>
+</html>

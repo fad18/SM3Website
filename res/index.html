@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="../js/vue.js"></script>
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/nav.css">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">	
+	<title>文件完整性检测</title>
+</head>
+<body>
+	<nav>
+	<div id="head1">
+		<p>文件完整性检测<span id="p1">(基于SM3国标算法)</span></p>
+	</div>
+	<div id="head2">
+		<ul>
+			<li id="nav-li"><a href="upload.html">文件上传</a></li>
+			<li id="nav-li"><a href="download.html">文件下载列表</a></li>
+		</ul>
+	</div>
+</nav>
+	
+	<div id="content">
+		<p>本网站提供文件的上传与下载，并通过SM3国标算法生成唯一的哈希值，确保文件的前后一致</p>
+		<p class="tip">1、本网站可单纯用于计算文件哈希值，所有算法在前端完成，不涉及上传，保护用户隐私</p>
+		<p class="tip">2、本网站提供windows环境下计算文件哈希值程序（名称：sm3本地校验工具.exe）</p>
+		<p class="tip">3、本网站推荐在firefox、chrome及其他国产浏览器环境下使用，不推荐edge浏览器</p>
+		<button class="btn" onclick="window.location.href ='upload.html'">开始体验</button>
+	</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+.form{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	height: 100px;
+}
+
+p{
+	text-align:center;
+}
+
+.title{
+	font-size: 30px;
+	color: rgb(36,41,46);
+	overflow:hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis; 
+}
+
+#upBtn{
+	display: inline-block;
+	overflow: hidden;
+	position: relative;
+	background-color: rgb(37,122,248);
+	width: 150px;
+	height: 50px;
+	font-size: 15px;
+	color: white;
+	border-radius:3px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+	margin: 10px;
+}
+
+#upBtn input{
+	filter: alpha(opacity=0);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+    right: 0;
+    text-align: right;
+    top: 0;
+    cursor: pointer;
+}
+
+#upBtn:hover{
+	background-color: rgb(36,39,203);
+}
+
+button{
+	width: 150px;
+	height: 50px;
+	border:0px;
+	border-radius: 3px;
+	background-color: rgb(50,204,86);
+	color: white;
+	font-size: 15px;
+	outline: none;
+}
+
+button:hover{
+	background-color: rgb(41,172,71);
+	cursor:pointer;
+}
